@@ -108,16 +108,16 @@
 </head>
 <body class="relative min-h-screen text-slate-800 antialiased selection:bg-sky-500 selection:text-white">
 
-    <!-- Background Ambient Video -->
+    <!-- Background Ambient Video (ปรับความเด่นชัดของคลิปพื้นหลัง) -->
     <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         <iframe 
-            class="absolute top-1/2 left-1/2 w-[120vw] h-[120vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 object-cover opacity-15 filter blur-[1px]" 
+            class="absolute top-1/2 left-1/2 w-[120vw] h-[120vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 object-cover opacity-35" 
             src="https://www.youtube.com/embed/K2U4tvwG7Ag?autoplay=1&mute=1&controls=0&loop=1&playlist=K2U4tvwG7Ag&playsinline=1&enablejsapi=1" 
             title="PM2.5 Background" 
             frameborder="0" 
             allow="autoplay; encrypted-media">
         </iframe>
-        <div class="absolute inset-0 bg-gradient-to-b from-sky-50/80 via-sky-50/90 to-slate-50"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-sky-50/40 via-sky-50/50 to-slate-50/80"></div>
     </div>
 
     <!-- NAVIGATION BAR -->
@@ -484,11 +484,11 @@
         </div>
     </section>
 
-    <!-- SECTION 5: DEMO VIDEO & DASHBOARD & 3D MODEL -->
+    <!-- SECTION 5: DEMO VIDEO, DASHBOARD & 3D MODEL / HARDWARE GALLERY -->
     <section id="research-results" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto space-y-12">
         <div class="text-center max-w-3xl mx-auto">
             <h2 class="text-xs uppercase font-bold tracking-widest text-sky-600 mb-2">Experimental Results & Demonstration</h2>
-            <p class="text-3xl sm:text-4xl font-bold text-slate-900">ผลการศึกษาและแบบจำลองระบบ</p>
+            <p class="text-3xl sm:text-4xl font-bold text-slate-900">ผลการศึกษา แบบจำลอง 3D และชิ้นงานจริง</p>
         </div>
 
         <!-- 3D MODEL VIEWER CARD -->
@@ -518,6 +518,56 @@
             </div>
         </div>
 
+        <!-- HARDWARE GALLERY (รูปภาพชิ้นงานจริง) -->
+        <div id="hardware-gallery" class="liquid-glass-light rounded-3xl p-6 sm:p-8 border border-white shadow-xl">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                    <i data-lucide="cpu" class="w-6 h-6 text-emerald-600"></i>
+                    <span>ภาพถ่ายชิ้นงานและโครงสร้างฮาร์ดแวร์จริง (Physical Prototype)</span>
+                </h3>
+                <p class="text-xs text-slate-500 font-medium">ภาพประกอบการประกอบกล่องสถานีตรวจวัดคุณภาพอากาศ IoT และการเดินสายเซนเซอร์ภายใน</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- รูปที่ 1: โครงสร้างวงจรภายใน -->
+                <div class="bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+                    <div class="aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-100 mb-3 border border-slate-100">
+                        <img src="hardware-inside.jpg" alt="การเดินสายวงจรและอุปกรณ์ภายในกล่อง IoT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-sm mb-1 flex items-center gap-1.5">
+                        <i data-lucide="circuit-board" class="w-4 h-4 text-sky-600"></i>
+                        <span>วงจรและเซนเซอร์ภายใน</span>
+                    </h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">การติดตั้งไมโครคอนโทรลเลอร์ ESP32, เซนเซอร์ PMS5003, BME280 และจอ OLED เข้ากับบอร์ดขยายสัญญาณ</p>
+                </div>
+
+                <!-- รูปที่ 2: ด้านบนกล่องพร้อมหน้าจอ -->
+                <div class="bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+                    <div class="aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-100 mb-3 border border-slate-100">
+                        <img src="hardware-top.jpg" alt="ฝากล่องพร้อมจอแสดงผล OLED" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-sm mb-1 flex items-center gap-1.5">
+                        <i data-lucide="monitor" class="w-4 h-4 text-emerald-600"></i>
+                        <span>หน้าจอแสดงผล OLED</span>
+                    </h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">ส่วนฝากล่องด้านบนเจาะช่องติดตั้งจอ OLED สำหรับแสดงค่าฝุ่น PM 2.5 และสถานะการเชื่อมต่อ ณ จุดติดตั้ง</p>
+                </div>
+
+                <!-- รูปที่ 3: ด้านข้างกล่องเคส -->
+                <div class="bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md transition-all group">
+                    <div class="aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-100 mb-3 border border-slate-100">
+                        <img src="hardware-side.jpg" alt="เคสกันน้ำและช่องระบายอากาศเซนเซอร์" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-sm mb-1 flex items-center gap-1.5">
+                        <i data-lucide="shield" class="w-4 h-4 text-amber-600"></i>
+                        <span>เคสภายนอกและช่องลม</span>
+                    </h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">ช่องดักลมสำหรับการไหลเวียนของอากาศเข้าสู่เซนเซอร์วัดฝุ่นเลเซอร์ และช่องสำหรับพอร์ตจ่ายไฟ</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEMO VIDEO -->
         <div id="demo-video" class="liquid-glass-light rounded-3xl p-6 sm:p-8 border border-white shadow-xl">
             <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
                 <i data-lucide="play-circle" class="w-6 h-6 text-sky-600"></i>
@@ -536,6 +586,7 @@
             </div>
         </div>
 
+        <!-- DASHBOARD -->
         <div id="dashboard" class="liquid-glass-light rounded-3xl p-6 sm:p-8 border border-white shadow-xl">
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
                 <div>
