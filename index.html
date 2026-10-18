@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายงานผลการศึกษาแบบ 3D</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Model Viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <!-- Google Fonts (Prompt) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+  <!-- Header / Navbar -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+          3D
+        </div>
+        <h1 class="text-xl font-semibold text-slate-900">แดชบอร์ดสรุปผลการศึกษา</h1>
+      </div>
+      <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+        ● อัปเดตล่าสุดแล้ว
+      </span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- ส่วนแสดงโมเดล 3D (2 Columns) -->
+      <div class="lg:col-span-2 bg-white rounded-2xl border border-slate-200 p-6 shadow-sm flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-lg font-semibold text-slate-900">การแสดงผลแบบจำลอง 3 มิติ</h2>
+            <p class="text-sm text-slate-500">คลิกค้างเพื่อหมุน เลื่อน หรือใช้นิ้วซูมเข้า-ออก</p>
+          </div>
+          <span class="bg-slate-100 text-slate-600 text-xs px-2.5 py-1 rounded-md font-mono">.GLB / .GLTF</span>
+        </div>
+
+        <!-- Container สำหรับ 3D Model Viewer -->
+        <div class="w-full h-[480px] bg-slate-100 rounded-xl overflow-hidden relative border border-slate-200">
+          <model-viewer 
+            src="model.glb" 
+            alt="โมเดล 3D สรุปผลการศึกษา" 
+            auto-rotate 
+            camera-controls 
+            shadow-intensity="1"
+            shadow-softness="0.7"
+            exposure="1"
+            class="w-full h-full">
+          </model-viewer>
+        </div>
+      </div>
+
+      <!-- ส่วนสรุปผลการศึกษาและรายละเอียด (1 Column) -->
+      <div class="space-y-6">
+        
+        <!-- รายละเอียดโครงการ -->
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
+          <h3 class="text-base font-semibold text-slate-900 mb-3">ภาพรวมผลการศึกษา</h3>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            แบบจำลอง 3 มิตินี้แสดงถึงโครงสร้างผลการศึกษาและข้อมูลที่ได้จากการทดลอง/การวิจัย สามารถหมุนพิจารณาองค์ประกอบและรายละเอียดในแต่ละมิติได้อย่างอิสระ
+          </p>
+          
+          <div class="border-t border-slate-100 pt-4 space-y-3">
+            <div class="flex justify-between text-sm">
+              <span class="text-slate-500">สถานะโปรเจกต์</span>
+              <span class="font-medium text-blue-600">เสร็จสิ้น (Completed)</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="text-slate-500">รูปแบบไฟล์</span>
+              <span class="font-medium text-slate-700">glTF 2.0 Binary (.glb)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- การ์ดตัวเลขสรุปผล -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="text-xs text-slate-500 font-medium mb-1">ความถูกต้องแม่นยำ</div>
+            <div class="text-2xl font-bold text-slate-900">98.5%</div>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="text-xs text-slate-500 font-medium mb-1">การประมวลผล 3D</div>
+            <div class="text-2xl font-bold text-emerald-600">60 FPS</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 py-4 text-center text-xs text-slate-500">
+      © 2026 ระบบแสดงผลงานวิจัยและผลการศึกษา 3D — โฮสต์ด้วย Netlify & GitHub
+    </div>
+  </footer>
+
+</body>
+</html>
