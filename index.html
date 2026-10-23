@@ -138,39 +138,41 @@
 
             <!-- Links -->
             <div class="hidden md:flex items-center gap-1 lg:gap-2">
-                <a href="#home" class="px-4 py-2 text-sm font-medium text-slate-900 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">Home</a>
+                <a href="#home" class="px-3 py-2 text-sm font-medium text-slate-900 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">Home</a>
 
-                <!-- Dropdown -->
+                <!-- Dropdown: บทนำ -->
                 <div class="relative group">
-                    <button class="px-4 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors rounded-lg hover:bg-sky-100/50 flex items-center gap-1.5">
+                    <button class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors rounded-lg hover:bg-sky-100/50 flex items-center gap-1.5">
                         <span>บทนำ</span>
                         <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500 group-hover:rotate-180 transition-transform duration-200"></i>
                     </button>
                     <div class="absolute left-0 top-full pt-2 w-64 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200">
                         <div class="liquid-glass-light rounded-xl p-2 shadow-2xl border border-white bg-white/95">
-                            <a href="#intro-background" class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm text-slate-700 hover:text-sky-700 hover:bg-sky-50 transition-all">
-                                <i data-lucide="file-text" class="w-4 h-4 text-sky-600"></i>
-                                <span>ความเป็นมาและความสำคัญ</span>
+                            <a href="#intro-problem" class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm text-slate-700 hover:text-sky-700 hover:bg-sky-50 transition-all">
+                                <i data-lucide="alert-circle" class="w-4 h-4 text-sky-600"></i>
+                                <span>1. ปัญหาและความต้องการ</span>
                             </a>
                             <a href="#intro-objectives" class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 transition-all">
                                 <i data-lucide="target" class="w-4 h-4 text-emerald-600"></i>
-                                <span>วัตถุประสงค์</span>
+                                <span>2. วัตถุประสงค์</span>
                             </a>
                             <a href="#intro-scope" class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm text-slate-700 hover:text-amber-700 hover:bg-amber-50 transition-all">
                                 <i data-lucide="compass" class="w-4 h-4 text-amber-600"></i>
-                                <span>ขอบเขตการศึกษา</span>
+                                <span>3. ขอบเขตการศึกษา</span>
                             </a>
                             <a href="#intro-benefits" class="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-sm text-slate-700 hover:text-purple-700 hover:bg-purple-50 transition-all">
                                 <i data-lucide="award" class="w-4 h-4 text-purple-600"></i>
-                                <span>ประโยชน์ที่คาดว่าจะได้รับ</span>
+                                <span>4. ประโยชน์ที่คาดว่าจะได้รับ</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <a href="#project-report" class="px-4 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">เล่มประกอบโครงการ</a>
-                <a href="#related-research" class="px-4 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">งานวิจัยที่เกี่ยวข้อง</a>
-                <a href="#research-results" class="px-4 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">ผลการศึกษา</a>
+                <!-- เมนูใหม่: วิธีการดำเนินงาน -->
+                <a href="#methodology" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">วิธีการดำเนินงาน</a>
+                <a href="#project-report" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">เล่มประกอบโครงการ</a>
+                <a href="#related-research" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">งานวิจัยที่เกี่ยวข้อง</a>
+                <a href="#research-results" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">ผลการศึกษา</a>
             </div>
 
             <div class="flex items-center gap-3">
@@ -232,9 +234,9 @@
                     <i data-lucide="sparkles" class="w-6 h-6"></i>
                 </div>
                 <div>
-                    <p class="text-xs text-slate-500 font-medium">AI พยากรณ์ล่วงหน้า (3 ชม.)</p>
+                    <p class="text-xs text-slate-500 font-medium">AI พยากรณ์ล่วงหน้า (3-7 วัน)</p>
                     <p class="text-xl font-bold text-sky-700">21.0 <span class="text-xs text-slate-500">µg/m³</span></p>
-                    <span class="text-[11px] text-slate-600">แบบจำลอง LSTM / Random Forest</span>
+                    <span class="text-[11px] text-slate-600">แบบจำลอง LSTM Model</span>
                 </div>
             </div>
 
@@ -245,7 +247,7 @@
                 <div>
                     <p class="text-xs text-slate-500 font-medium">อุณหภูมิ / ความชื้น (BME280)</p>
                     <p class="text-xl font-bold text-slate-800">29.5°C <span class="text-xs text-slate-500">/ 64%</span></p>
-                    <span class="text-[11px] text-slate-600">สอบเทียบ K-Factor ชดเชยความชื้น</span>
+                    <span class="text-[11px] text-slate-600">Humidity Compensation</span>
                 </div>
             </div>
 
@@ -255,7 +257,7 @@
                 </div>
                 <div>
                     <p class="text-xs text-slate-500 font-medium">ระบบแจ้งเตือนอัตโนมัติ</p>
-                    <p class="text-xl font-bold text-purple-700">LINE Notify</p>
+                    <p class="text-xl font-bold text-purple-700">LINE Flex Message</p>
                     <span class="text-[11px] text-purple-600 font-medium">ส่งสัญญาณเตือนครู/ผู้บริหาร</span>
                 </div>
             </div>
@@ -263,41 +265,44 @@
     </section>
 
     <!-- SECTION 2: บทนำ -->
-    <section class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto space-y-16">
+    <section id="intro" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto space-y-16">
         <div class="text-center max-w-3xl mx-auto">
-            <h2 class="text-xs uppercase font-bold tracking-widest text-sky-600 mb-2">บทนำ & รายละเอียดโครงการ</h2>
-            <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">โครงสร้างการศึกษาและจุดประสงค์งานวิจัย</p>
+            <h2 class="text-xs uppercase font-bold tracking-widest text-sky-600 mb-2">บทนำ (Introduction)</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">การศึกษาบริบท ปัญหา และขอบเขตงานวิจัย</p>
             <div class="w-16 h-1 bg-gradient-to-r from-sky-500 to-emerald-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <div id="intro-background" class="liquid-glass-light rounded-3xl p-8 sm:p-12 border border-white shadow-xl">
+        <!-- 1. ปัญหาและความต้องการ -->
+        <div id="intro-problem" class="liquid-glass-light rounded-3xl p-8 sm:p-12 border border-white shadow-xl">
             <div class="flex items-center gap-4 mb-6">
                 <div class="w-12 h-12 rounded-2xl bg-sky-100 border border-sky-300 flex items-center justify-center text-sky-600">
-                    <i data-lucide="file-text" class="w-6 h-6"></i>
+                    <i data-lucide="alert-triangle" class="w-6 h-6"></i>
                 </div>
                 <div>
-                    <span class="text-xs text-sky-600 uppercase tracking-widest font-bold">หัวข้อ 1.1</span>
-                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">ความเป็นมาและความสำคัญของปัญหา</h3>
+                    <span class="text-xs text-sky-600 uppercase tracking-widest font-bold">หัวข้อ 1</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">ปัญหาและความต้องการ</h3>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-slate-700 leading-relaxed text-base">
                 <div class="space-y-4">
                     <p class="bg-white/80 p-5 rounded-2xl border border-sky-100 shadow-sm">
-                        <strong class="text-slate-900">วิกฤต PM 2.5 ในสถานศึกษา:</strong> ฝุ่นละออง PM 2.5 เป็นภัยเงียบที่ทำร้ายสุขภาพเด็กๆ แต่ความท้าทายคือโรงเรียนมักจะรู้ตัวเมื่อฝุ่นอยู่ในระดับอันตรายไปแล้ว ทำให้ผู้บริหารและครูไม่สามารถวางแผนปรับเปลี่ยนกิจกรรมกลางแจ้ง (เช่น การเคารพธงชาติ หรือวิชาพลศึกษา) ได้ทันเวลา
+                        <strong class="text-slate-900">วิกฤต PM 2.5 กับสุขภาวะ:</strong> วิกฤตฝุ่นละออง PM 2.5 ก่อให้เกิดผลกระทบร้ายแรงต่อสุขภาพทางเดินหายใจและกระแสเลือดของประชาชนและนักเรียนอย่างต่อเนื่อง
                     </p>
-                    <p>
-                        <strong class="text-sky-700">ข้อจำกัดของระบบเดิม:</strong> สถานีตรวจวัดภาครัฐมีต้นทุนสูง ขาดแคลนการกระจายตัว และรายงานผลย้อนหลัง ซึ่งไม่สะท้อนมลพิษระดับจุลภาค (<span class="text-slate-900 font-semibold underline">Hyper-local Data</span>)
+                    <p class="bg-white/80 p-5 rounded-2xl border border-sky-100 shadow-sm">
+                        <strong class="text-sky-700">ข้อจำกัดสถานีภาครัฐ:</strong> สถานีตรวจวัดคุณภาพอากาศของภาครัฐมีต้นทุนสูงและจำกัดอยู่เฉพาะจุดศูนย์กลางเมือง ทำให้ขาดข้อมูลเฉพาะพื้นที่ระดับจุลภาค (<span class="text-slate-900 font-semibold underline">Hyper-local Data</span>) และเน้นการรายงานย้อนหลังมากกว่าการพยากรณ์ล่วงหน้า
                     </p>
                 </div>
                 <div class="space-y-4">
-                    <p>
-                        <strong class="text-emerald-700">ทางออกด้วย IoT & AI:</strong> การใช้ไมโครคอนโทรลเลอร์ <span class="text-slate-900 font-semibold">ESP32</span> ร่วมกับเซนเซอร์ฝุ่นเลเซอร์ <span class="text-slate-900 font-semibold">PMS5003</span> และ <span class="text-slate-900 font-semibold">BME280</span> สร้างเครือข่ายสถานีต้นทุนต่ำแต่เที่ยงตรงสูง
-                    </p>
-                    <p class="bg-sky-50/80 p-5 rounded-2xl border border-sky-200 text-sky-900 font-medium">
-                        <i data-lucide="check-circle-2" class="w-5 h-5 text-sky-600 inline mr-2"></i>
-                        ประยุกต์ใช้ปัญญาประดิษฐ์ (<span class="font-bold text-slate-900">Random Forest & LSTM</span>) คาดการณ์ระดับฝุ่นล่วงหน้าผ่าน Web Dashboard และแจ้งเตือนอัตโนมัติทาง LINE
-                    </p>
+                    <div class="bg-sky-50/80 p-6 rounded-2xl border border-sky-200 text-sky-900 font-medium h-full flex flex-col justify-center">
+                        <h4 class="text-lg font-bold text-sky-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-sky-600"></i>
+                            <span>จุดเริ่มความต้องการพัฒนาระบบ:</span>
+                        </h4>
+                        <p class="leading-relaxed">
+                            เกิดความต้องการพัฒนาระบบเฝ้าระวังมลพิษระดับพื้นที่ที่มีต้นทุนต่ำ มีความเที่ยงตรงสูง สามารถพยากรณ์ค่าฝุ่นล่วงหน้าผ่าน AI และแจ้งเตือนผ่าน LINE ร่วมกับ Web Dashboard ได้อย่างแม่นยำและทันท่วงที
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -318,97 +323,194 @@
             </div>
         </div>
 
-        <!-- 1.2 วัตถุประสงค์ -->
+        <!-- 2. วัตถุประสงค์ -->
         <div id="intro-objectives" class="liquid-glass-light rounded-3xl p-8 sm:p-12 border border-white shadow-xl">
             <div class="flex items-center gap-4 mb-8">
                 <div class="w-12 h-12 rounded-2xl bg-emerald-100 border border-emerald-300 flex items-center justify-center text-emerald-600">
                     <i data-lucide="target" class="w-6 h-6"></i>
                 </div>
                 <div>
-                    <span class="text-xs text-emerald-600 uppercase tracking-widest font-bold">หัวข้อ 1.2</span>
-                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">วัตถุประสงค์ของโครงงาน</h3>
+                    <span class="text-xs text-emerald-600 uppercase tracking-widest font-bold">หัวข้อ 2</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">วัตถุประสงค์</h3>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-white/90 rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-emerald-500 transition-all">
-                    <div class="text-3xl font-bold text-emerald-600 mb-3">1.2.1</div>
+                    <div class="text-3xl font-bold text-emerald-600 mb-3">01</div>
                     <h4 class="text-lg font-bold text-slate-900 mb-2">ศึกษาความต้องการ</h4>
-                    <p class="text-sm text-slate-600">ศึกษาและสำรวจความต้องการพัฒนาระบบ IoT ตรวจจับฝุ่นและสภาพอากาศล่วงหน้าในสถานศึกษา</p>
+                    <p class="text-sm text-slate-600">เพื่อศึกษาความต้องการพัฒนาระบบ IoT ตรวจจับฝุ่นและสภาพอากาศล่วงหน้าในสถานศึกษา</p>
                 </div>
                 <div class="bg-white/90 rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-emerald-500 transition-all">
-                    <div class="text-3xl font-bold text-emerald-600 mb-3">1.2.2</div>
+                    <div class="text-3xl font-bold text-emerald-600 mb-3">02</div>
                     <h4 class="text-lg font-bold text-slate-900 mb-2">พัฒนาระบบ IoT</h4>
-                    <p class="text-sm text-slate-600">ออกแบบและสร้างสถานีตรวจวัดคุณภาพอากาศ ร่วมกับระบบ AI วิเคราะห์และคาดการณ์ฝุ่นล่วงหน้า</p>
+                    <p class="text-sm text-slate-600">เพื่อพัฒนาระบบ IoT ตรวจจับฝุ่นและสภาพอากาศล่วงหน้าในสถานศึกษา</p>
                 </div>
                 <div class="bg-white/90 rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-emerald-500 transition-all">
-                    <div class="text-3xl font-bold text-emerald-600 mb-3">1.2.3</div>
+                    <div class="text-3xl font-bold text-emerald-600 mb-3">03</div>
                     <h4 class="text-lg font-bold text-slate-900 mb-2">ประเมินคุณภาพ</h4>
-                    <p class="text-sm text-slate-600">ประเมินความเที่ยงตรงของอุปกรณ์และทดสอบความแม่นยำของแบบจำลอง AI คาดการณ์</p>
+                    <p class="text-sm text-slate-600">เพื่อประเมินคุณภาพของการพัฒนาระบบ IoT ตรวจจับฝุ่นและสภาพอากาศล่วงหน้าในสถานศึกษา</p>
                 </div>
                 <div class="bg-white/90 rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-emerald-500 transition-all">
-                    <div class="text-3xl font-bold text-emerald-600 mb-3">1.2.4</div>
+                    <div class="text-3xl font-bold text-emerald-600 mb-3">04</div>
                     <h4 class="text-lg font-bold text-slate-900 mb-2">ศึกษาความพึงพอใจ</h4>
-                    <p class="text-sm text-slate-600">ประเมินระดับความพึงพอใจของผู้ใช้งาน ครู นักเรียน และผู้บริหารต่อการใช้งานระบบ</p>
+                    <p class="text-sm text-slate-600">เพื่อศึกษาความพึงพอใจของผู้ใช้งานที่มีต่อระบบ IoT ตรวจจับฝุ่นและสภาพอากาศล่วงหน้าในสถานศึกษา</p>
                 </div>
             </div>
         </div>
 
-        <!-- 1.3 & 1.6 -->
+        <!-- 3. ขอบเขตการศึกษา & 4. ประโยชน์ที่คาดว่าจะได้รับ -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- 3. ขอบเขตการศึกษา -->
             <div id="intro-scope" class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl">
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-10 h-10 rounded-xl bg-amber-100 border border-amber-300 flex items-center justify-center text-amber-600">
                         <i data-lucide="compass" class="w-5 h-5"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900">1.3 ขอบเขตของโครงงาน</h3>
+                    <div>
+                        <span class="text-xs text-amber-600 uppercase tracking-widest font-bold">หัวข้อ 3</span>
+                        <h3 class="text-xl font-bold text-slate-900">ขอบเขตการศึกษา</h3>
+                    </div>
                 </div>
-                <ul class="space-y-3 text-sm text-slate-700">
-                    <li class="flex items-start gap-2.5">
-                        <i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0 mt-1"></i>
-                        <span>ไมโครคอนโทรลเลอร์ <strong>ESP32</strong> รับส่งข้อมูลเรียลไทม์กับ InfluxDB และ Firebase</span>
-                    </li>
-                    <li class="flex items-start gap-2.5">
-                        <i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0 mt-1"></i>
-                        <span>เซนเซอร์ <strong>PMS5003</strong> (วัดฝุ่น) และ <strong>BME280</strong> (วัดอุณหภูมิ/ความชื้น/ความกดอากาศ)</span>
-                    </li>
-                    <li class="flex items-start gap-2.5">
-                        <i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0 mt-1"></i>
-                        <span>แบบจำลอง <strong>LSTM / Random Forest</strong> ประมวลผลบน Cloud คาดการณ์ PM 2.5</span>
-                    </li>
-                    <li class="flex items-start gap-2.5">
-                        <i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0 mt-1"></i>
-                        <span>Web Dashboard และระบบส่งสัญญาณแจ้งเตือนผ่าน <strong>LINE Notify API</strong></span>
-                    </li>
-                </ul>
+
+                <div class="space-y-4 text-sm text-slate-700">
+                    <div class="bg-white/80 p-4 rounded-xl border border-amber-100">
+                        <strong class="text-amber-800 block mb-1 font-bold">ประชากรและกลุ่มตัวอย่าง:</strong>
+                        นิสิต บุคลากร และอาจารย์ มหาวิทยาลัยบูรพา วิทยาเขตบางแสน โดยสุ่มกลุ่มตัวอย่าง 30 คนในการสำรวจความต้องการ และ 40 คนในการประเมินความพึงพอใจหลังการทดลองใช้
+                    </div>
+                    <div class="bg-white/80 p-4 rounded-xl border border-amber-100">
+                        <strong class="text-amber-800 block mb-1 font-bold">เนื้อหาและระบบ:</strong>
+                        ตรวจวัดฝุ่น PM 2.5, PM 10, อุณหภูมิ, ความชื้นสัมพัทธ์ และความกดอากาศ มีระบบชดเชยค่าความชื้นสัมพัทธ์ (Humidity Compensation) ใช้ AI แบบจำลอง LSTM ในการพยากรณ์ฝุ่นล่วงหน้า 3-7 วัน และแสดงผลผ่าน Web Dashboard ร่วมกับการแจ้งเตือนผ่าน LINE Notify (Flex Message)
+                    </div>
+                    <div class="bg-white/80 p-4 rounded-xl border border-amber-100">
+                        <strong class="text-amber-800 block mb-1 font-bold">ฮาร์ดแวร์:</strong>
+                        บอร์ด ESP32, ESP32 Expansion Board, เซนเซอร์ Plantower PMS5003, เซนเซอร์ Bosch BME280, จอ OLED 1.3 นิ้ว และกล่องเคสกันน้ำระบายอากาศ
+                    </div>
+                    <div class="bg-white/80 p-4 rounded-xl border border-amber-100">
+                        <strong class="text-amber-800 block mb-1 font-bold">ซอฟต์แวร์:</strong>
+                        Arduino IDE, InfluxDB, Firebase Realtime Database, Netlify, Google Apps Script และ LINE Notify API
+                    </div>
+                </div>
             </div>
 
+            <!-- 4. ประโยชน์ที่คาดว่าจะได้รับ -->
             <div id="intro-benefits" class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl">
                 <div class="flex items-center gap-3 mb-6">
                     <div class="w-10 h-10 rounded-xl bg-purple-100 border border-purple-300 flex items-center justify-center text-purple-600">
                         <i data-lucide="award" class="w-5 h-5"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900">1.6 ประโยชน์ที่คาดว่าจะได้รับ</h3>
+                    <div>
+                        <span class="text-xs text-purple-600 uppercase tracking-widest font-bold">หัวข้อ 4</span>
+                        <h3 class="text-xl font-bold text-slate-900">ประโยชน์ที่คาดว่าจะได้รับ</h3>
+                    </div>
                 </div>
-                <div class="space-y-3 text-sm text-slate-700">
-                    <div class="p-3.5 rounded-xl bg-white/80 border border-purple-100 shadow-sm">
-                        <strong class="text-purple-800 block mb-1">ด้านนักเรียนและสถานศึกษา:</strong>
-                        เข้าถึงข้อมูล PM 2.5 ระดับจุลภาค วางแผนป้องกันตนเองและทำกิจกรรมได้อย่างปลอดภัย
+                <div class="space-y-4 text-sm text-slate-700">
+                    <div class="p-4 rounded-xl bg-white/80 border border-purple-100 shadow-sm flex items-start gap-3">
+                        <div class="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold shrink-0 mt-0.5">1</div>
+                        <div>
+                            <strong class="text-purple-900 block mb-1 font-bold">ด้านการเตรียมการป้องกันสุขภาพ:</strong>
+                            ช่วยให้นักเรียน บุคลากร และประชาชนเข้าถึงข้อมูลฝุ่นแบบเรียลไทม์ และได้รับการแจ้งเตือนภัยล่วงหน้าเพื่อเตรียมการป้องกันสุขภาพ
+                        </div>
                     </div>
-                    <div class="p-3.5 rounded-xl bg-white/80 border border-purple-100 shadow-sm">
-                        <strong class="text-purple-800 block mb-1">ด้านการบริหารจัดการ:</strong>
-                        ช่วยผู้บริหารตัดสินใจเชิงรุกในการสั่งงดกิจกรรมกลางแจ้ง หรือเปิดระบบฟอกอากาศทันท่วงที
+                    <div class="p-4 rounded-xl bg-white/80 border border-purple-100 shadow-sm flex items-start gap-3">
+                        <div class="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold shrink-0 mt-0.5">2</div>
+                        <div>
+                            <strong class="text-purple-900 block mb-1 font-bold">ด้านการบริหารจัดการเชิงรุก:</strong>
+                            ช่วยให้ผู้บริหารสถานศึกษามีเครื่องมือเชิงรุกในการวางแผนกิจกรรมกลางแจ้งหรือการบริหารจัดการสิ่งแวดล้อม
+                        </div>
                     </div>
-                    <div class="p-3.5 rounded-xl bg-white/80 border border-purple-100 shadow-sm">
-                        <strong class="text-purple-800 block mb-1">ด้านวิชาการ:</strong>
-                        สร้างสถาปัตยกรรม IoT ต้นทุนต่ำ และเปิดชุดข้อมูล Hyper-local Time-Series สำหรับต่อยอด
+                    <div class="p-4 rounded-xl bg-white/80 border border-purple-100 shadow-sm flex items-start gap-3">
+                        <div class="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold shrink-0 mt-0.5">3</div>
+                        <div>
+                            <strong class="text-purple-900 block mb-1 font-bold">ด้านองค์ความรู้และชุดข้อมูลเปิด:</strong>
+                            ได้องค์ความรู้บูรณาการระบบ IoT, Time-Series Database และ AI รวมถึงชุดข้อมูลเปิด (Dataset) ฝุ่นระดับ Hyper-local
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 3: เล่มประกอบโครงการ -->
+    <!-- SECTION 3: วิธีการดำเนินงาน (เมนูใหม่) -->
+    <section id="methodology" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto space-y-12">
+        <div class="text-center max-w-3xl mx-auto">
+            <h2 class="text-xs uppercase font-bold tracking-widest text-sky-600 mb-2">Methodology</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">วิธีการดำเนินงาน (กระบวนการพัฒนาระบบ)</p>
+            <div class="w-16 h-1 bg-gradient-to-r from-sky-500 to-emerald-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="liquid-glass-light rounded-3xl p-8 sm:p-12 border border-white shadow-xl">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 rounded-2xl bg-sky-100 border border-sky-300 flex items-center justify-center text-sky-600">
+                    <i data-lucide="layers" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="text-xs text-sky-600 uppercase tracking-widest font-bold">1. กระบวนการพัฒนาระบบ</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">กรอบการพัฒนาตาม ADDIE Model</h3>
+                </div>
+            </div>
+
+            <!-- ADDIE Model 5 Steps Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <!-- Analysis -->
+                <div class="bg-white/90 rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 font-bold flex items-center justify-center mb-3">
+                            A
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mb-2">1. ขั้นวิเคราะห์<br><span class="text-xs text-sky-600 font-normal">(Analysis)</span></h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">ศึกษาสภาพปัญหา บริบทพื้นที่ มหาวิทยาลัยบูรพา วิทยาเขตบางแสน และสำรวจความต้องการของผู้ใช้ในด้านพารามิเตอร์ ช่องทางแจ้งเตือน และระยะเวลาพยากรณ์</p>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="bg-white/90 rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center mb-3">
+                            D
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mb-2">2. ขั้นออกแบบ<br><span class="text-xs text-emerald-600 font-normal">(Design)</span></h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">ออกแบบสถาปัตยกรรม IoT 5 ชั้น (Perception, Transport, Processing, Application, Business), ฮาร์ดแวร์, InfluxDB/Firebase, LSTM, Web Dashboard และ Flex Message</p>
+                    </div>
+                </div>
+
+                <!-- Develop -->
+                <div class="bg-white/90 rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 font-bold flex items-center justify-center mb-3">
+                            D
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mb-2">3. ขั้นพัฒนา<br><span class="text-xs text-amber-600 font-normal">(Develop)</span></h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">ประกอบฮาร์ดแวร์, เขียนโค้ด ESP32 กรองสัญญาณรบกวนด้วย Trimmed Mean Filtering, ฝึกแบบจำลอง LSTM, สร้าง Web บน Netlify และเชื่อมต่อ LINE API</p>
+                    </div>
+                </div>
+
+                <!-- Implement -->
+                <div class="bg-white/90 rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 font-bold flex items-center justify-center mb-3">
+                            I
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mb-2">4. ขั้นนำไปใช้<br><span class="text-xs text-purple-600 font-normal">(Implement)</span></h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">ติดตั้งสถานีตรวจวัดในพื้นที่จริง นำระบบไปสาธิตและให้กลุ่มตัวอย่าง 40 คนทดลองใช้งานจริง</p>
+                    </div>
+                </div>
+
+                <!-- Evaluate -->
+                <div class="bg-white/90 rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-500 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-700 font-bold flex items-center justify-center mb-3">
+                            E
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mb-2">5. ขั้นประเมินผล<br><span class="text-xs text-rose-600 font-normal">(Evaluate)</span></h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">ประเมินคุณภาพระบบโดยผู้เชี่ยวชาญ 5 ท่าน และประเมินความพึงพอใจของกลุ่มตัวอย่าง 40 คน</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: เล่มประกอบโครงการ -->
     <section id="project-report" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto">
         <div class="liquid-glass-light rounded-3xl p-8 sm:p-12 border border-white shadow-xl">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 pb-6 border-b border-slate-200">
@@ -443,7 +545,7 @@
         </div>
     </section>
 
-    <!-- SECTION 4: งานวิจัยที่เกี่ยวข้อง -->
+    <!-- SECTION 5: งานวิจัยที่เกี่ยวข้อง -->
     <section id="related-research" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-12">
             <h2 class="text-xs uppercase font-bold tracking-widest text-emerald-600 mb-2">Literature Review</h2>
@@ -476,7 +578,7 @@
                     <tr class="hover:bg-sky-50/30 transition-colors">
                         <td class="py-4 px-4 font-bold text-slate-900">Castelli et al. (2021)<br><span class="text-xs font-normal text-slate-500">Siwek et al. (2023)</span></td>
                         <td class="py-4 px-4">Open-Meteo API + Cloud AI</td>
-                        <td class="py-4 px-4">Random Forest & LSTM Regressor</td>
+                        <td class="py-4 px-4">LSTM Regressor Model</td>
                         <td class="py-4 px-4">การใช้ AI คาดการณ์ข้อมูลอนุกรมเวลาล่วงหน้า เพิ่มความแม่นยำในการเตือนภัยมลพิษทางอากาศ</td>
                     </tr>
                 </tbody>
@@ -484,11 +586,59 @@
         </div>
     </section>
 
-    <!-- SECTION 5: DEMO VIDEO, DASHBOARD & 3D MODEL / HARDWARE GALLERY -->
+    <!-- SECTION 6: DEMO VIDEO, DASHBOARD & 3D MODEL / HARDWARE GALLERY / RESULTS -->
     <section id="research-results" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto space-y-12">
         <div class="text-center max-w-3xl mx-auto">
             <h2 class="text-xs uppercase font-bold tracking-widest text-sky-600 mb-2">Experimental Results & Demonstration</h2>
             <p class="text-3xl sm:text-4xl font-bold text-slate-900">ผลการศึกษา แบบจำลอง 3D และชิ้นงานจริง</p>
+        </div>
+
+        <!-- การ์ดสรุปผลการศึกษาทางสถิติ (อัปเดตข้อมูลจาก PDF) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="liquid-glass-light rounded-3xl p-6 border border-white shadow-xl">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+                        <i data-lucide="check-check" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-emerald-600 font-bold uppercase">การประเมินคุณภาพ</span>
+                        <h4 class="text-base font-bold text-slate-900">ผู้เชี่ยวชาญ 5 ท่าน</h4>
+                    </div>
+                </div>
+                <div class="text-3xl font-extrabold text-slate-900 mb-1">X̄ = 4.63 <span class="text-sm font-normal text-slate-500">(S.D. = 0.41)</span></div>
+                <p class="text-xs text-emerald-700 font-bold mb-2">ระดับ "มากที่สุด"</p>
+                <p class="text-xs text-slate-600">ด้านระบบตรวจวัดฝุ่น ด้าน Web Dashboard/LINE Notify และด้านความเหมาะสมในการใช้งาน มีคะแนนสูงสุดเท่ากัน (X̄ = 4.68)</p>
+            </div>
+
+            <div class="liquid-glass-light rounded-3xl p-6 border border-white shadow-xl">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold">
+                        <i data-lucide="smile" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-sky-600 font-bold uppercase">ความพึงพอใจผู้ใช้งาน</span>
+                        <h4 class="text-base font-bold text-slate-900">กลุ่มตัวอย่าง 40 คน</h4>
+                    </div>
+                </div>
+                <div class="text-3xl font-extrabold text-slate-900 mb-1">X̄ = 4.67 <span class="text-sm font-normal text-slate-500">(S.D. = 0.37)</span></div>
+                <p class="text-xs text-sky-700 font-bold mb-2">ระดับ "มากที่สุด" (t = 28.546, p < .001)</p>
+                <p class="text-xs text-slate-600">ด้านการแจ้งเตือนผ่าน LINE Notify มีคะแนนพึงพอใจสูงสุด (X̄ = 4.73) สูงกว่าเกณฑ์อย่างมีนัยสำคัญทางสถิติ</p>
+            </div>
+
+            <div class="liquid-glass-light rounded-3xl p-6 border border-white shadow-xl">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center font-bold">
+                        <i data-lucide="zap" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs text-purple-600 font-bold uppercase">ประสิทธิภาพระบบ</span>
+                        <h4 class="text-base font-bold text-slate-900">เสถียรภาพและ AI</h4>
+                    </div>
+                </div>
+                <div class="text-3xl font-extrabold text-purple-700 mb-1">100% Stream</div>
+                <p class="text-xs text-purple-700 font-bold mb-2">รับส่งข้อมูลเสถียร</p>
+                <p class="text-xs text-slate-600">ใช้ Trimmed Mean Filtering + Humidity Compensation ลดความคลาดเคลื่อน และใช้ LSTM พยากรณ์ล่วงหน้า 3-7 วัน</p>
+            </div>
         </div>
 
         <!-- 3D MODEL VIEWER CARD -->
@@ -518,7 +668,7 @@
             </div>
         </div>
 
-        <!-- HARDWARE GALLERY (ปรับนามสกุลไฟล์เป็น .jfif) -->
+        <!-- HARDWARE GALLERY (ไฟล์ .jfif) -->
         <div id="hardware-gallery" class="liquid-glass-light rounded-3xl p-6 sm:p-8 border border-white shadow-xl">
             <div class="mb-6">
                 <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
@@ -591,7 +741,7 @@
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
                 <div>
                     <h3 class="text-2xl font-bold text-slate-900">แดชบอร์ดจำลองสตรีมข้อมูลเรียลไทม์ (Streamlit Dashboard)</h3>
-                    <p class="text-xs text-slate-500 font-medium">เปรียบเทียบค่าฝุ่นจริงจาก PMS5003 vs ค่าคาดการณ์จาก AI (Random Forest / LSTM)</p>
+                    <p class="text-xs text-slate-500 font-medium">เปรียบเทียบค่าฝุ่นจริงจาก PMS5003 vs ค่าคาดการณ์จาก AI (LSTM Model 3-7 วัน)</p>
                 </div>
                 <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs font-bold">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
@@ -608,7 +758,7 @@
     <!-- FOOTER -->
     <footer class="relative z-10 border-t border-sky-200/80 py-12 px-6 sm:px-12 text-center text-xs text-slate-500">
         <p class="text-slate-700 font-bold">โครงงานวิจัยการพัฒนาระบบ IoT ตรวจจับฝุ่นและสภาพอากาศล่วงหน้าในสถานศึกษา</p>
-        <p class="mt-2 text-slate-500">พัฒนาขึ้นเพื่อสร้างสถาปัตยกรรมเฝ้าระวังมลพิษทางอากาศเชิงรุก Smart City & Smart School</p>
+        <p class="mt-2 text-slate-500">มหาวิทยาลัยบูรพา วิทยาเขตบางแสน — พัฒนาขึ้นเพื่อสร้างสถาปัตยกรรมเฝ้าระวังมลพิษทางอากาศเชิงรุก Smart Campus</p>
     </footer>
 
     <!-- JAVASCRIPT -->
@@ -661,7 +811,7 @@
                             pointRadius: 5
                         },
                         {
-                            label: 'ค่าพยากรณ์ AI (LSTM Model)',
+                            label: 'ค่าพยากรณ์ AI (LSTM Model 3-7 วัน)',
                             data: [null, null, null, null, null, null, 18.4, 21.0, 23.5],
                             borderColor: '#10B981',
                             borderDash: [6, 6],
