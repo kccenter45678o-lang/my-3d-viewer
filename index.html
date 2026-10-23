@@ -172,7 +172,7 @@
                 <a href="#project-report" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">เล่มประกอบโครงการ</a>
                 <a href="#related-research" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">งานวิจัยที่เกี่ยวข้อง</a>
                 <a href="#research-results" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">ผลการศึกษา</a>
-                <a href="#team" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">ผู้จัดทำ</a>
+                <a href="#team" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">ที่ปรึกษาและผู้จัดทำ</a>
             </div>
 
             <div class="flex items-center gap-3">
@@ -828,46 +828,92 @@
         </div>
     </section>
 
-    <!-- SECTION 7: ผู้จัดทำ (Team Members Section) -->
-    <section id="team" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto space-y-12">
-        <div class="text-center max-w-3xl mx-auto">
-            <h2 class="text-xs uppercase font-bold tracking-widest text-sky-600 mb-2">Project Team</h2>
-            <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">ผู้จัดทำโครงงาน</p>
-            <div class="w-16 h-1 bg-gradient-to-r from-sky-500 to-emerald-500 mx-auto mt-4 rounded-full"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- ผู้จัดทำคนที่ 1 -->
-            <div class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl flex flex-col sm:flex-row items-center gap-6 group hover:scale-[1.02] transition-transform duration-300">
-                <div class="w-36 h-44 rounded-2xl overflow-hidden bg-slate-900 shrink-0 border-2 border-sky-300/60 shadow-lg relative">
-                    <img src="author-1.jpg" alt="นายพลพล เพ็ชรากูล" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent"></div>
-                </div>
-                <div class="text-center sm:text-left space-y-2">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold border border-sky-300">
-                        <i data-lucide="user" class="w-3.5 h-3.5 text-sky-600"></i>
-                        <span>ผู้จัดทำหลัก</span>
-                    </span>
-                    <h3 class="text-2xl font-bold text-slate-900">นายพลพล เพ็ชรากูล</h3>
-                    <p class="text-sm font-semibold text-sky-700 font-mono">รหัสนิสิต: 66040169</p>
-                    <p class="text-xs text-slate-500 leading-relaxed pt-1">นิสิตชั้นปีที่ 4 คณะศึกษาศาสตร์ มหาวิทยาลัยบูรพา วิทยาเขตบางแสน</p>
-                </div>
+    <!-- SECTION 7: อาจารย์ที่ปรึกษา & ผู้จัดทำ (Team & Advisors Section) -->
+    <section id="team" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto space-y-16">
+        <!-- 1. ส่วนอาจารย์ที่ปรึกษาโครงงาน -->
+        <div class="space-y-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-sky-600 mb-2">Project Advisors</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">อาจารย์ที่ปรึกษาโครงงาน</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-sky-500 to-emerald-500 mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <!-- ผู้จัดทำคนที่ 2 -->
-            <div class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl flex flex-col sm:flex-row items-center gap-6 group hover:scale-[1.02] transition-transform duration-300">
-                <div class="w-36 h-44 rounded-2xl overflow-hidden bg-slate-100 shrink-0 border-2 border-emerald-300/60 shadow-lg relative">
-                    <img src="author-2.jpg" alt="นายวิธวินท์ สังข์มงคล" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- อาจารย์ที่ปรึกษาคนที่ 1 -->
+                <div class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl flex flex-col sm:flex-row items-center gap-6 group hover:scale-[1.02] transition-transform duration-300">
+                    <div class="w-36 h-44 rounded-2xl overflow-hidden bg-slate-100 shrink-0 border-2 border-sky-300/60 shadow-lg relative">
+                        <img src="advisor-1.jpg" alt="ผู้ช่วยศาสตราจารย์ ดร.นคร ละลอกน้ำ" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="text-center sm:text-left space-y-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold border border-sky-300">
+                            <i data-lucide="award" class="w-3.5 h-3.5 text-sky-600"></i>
+                            <span>อาจารย์ที่ปรึกษา</span>
+                        </span>
+                        <h3 class="text-xl font-bold text-slate-900">ผู้ช่วยศาสตราจารย์ ดร.นคร ละลอกน้ำ</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed pt-1">อาจารย์ประจำ คณะศึกษาศาสตร์<br>มหาวิทยาลัยบูรพา วิทยาเขตบางแสน</p>
+                    </div>
                 </div>
-                <div class="text-center sm:text-left space-y-2">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold border border-emerald-300">
-                        <i data-lucide="user" class="w-3.5 h-3.5 text-emerald-600"></i>
-                        <span>ผู้จัดทำหลัก</span>
-                    </span>
-                    <h3 class="text-2xl font-bold text-slate-900">นายวิธวินท์ สังข์มงคล</h3>
-                    <p class="text-sm font-semibold text-emerald-700 font-mono">รหัสนิสิต: 66040179</p>
-                    <p class="text-xs text-slate-500 leading-relaxed pt-1">นิสิตชั้นปีที่ 4 คณะศึกษาศาสตร์ มหาวิทยาลัยบูรพา วิทยาเขตบางแสน</p>
+
+                <!-- อาจารย์ที่ปรึกษาคนที่ 2 -->
+                <div class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl flex flex-col sm:flex-row items-center gap-6 group hover:scale-[1.02] transition-transform duration-300">
+                    <div class="w-36 h-44 rounded-2xl overflow-hidden bg-slate-100 shrink-0 border-2 border-emerald-300/60 shadow-lg relative">
+                        <img src="advisor-2.jpg" alt="ผู้ช่วยศาสตราจารย์ ดร.ปริญญา เรืองทิพย์" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="text-center sm:text-left space-y-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold border border-emerald-300">
+                            <i data-lucide="award" class="w-3.5 h-3.5 text-emerald-600"></i>
+                            <span>อาจารย์ที่ปรึกษา</span>
+                        </span>
+                        <h3 class="text-xl font-bold text-slate-900">ผู้ช่วยศาสตราจารย์ ดร.ปริญญา เรืองทิพย์</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed pt-1">อาจารย์ประจำ คณะศึกษาศาสตร์<br>มหาวิทยาลัยบูรพา วิทยาเขตบางแสน</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. ส่วนผู้จัดทำโครงงาน -->
+        <div class="space-y-10 pt-6">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-xs uppercase font-bold tracking-widest text-emerald-600 mb-2">Project Creators</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">ผู้จัดทำโครงงาน</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-emerald-500 to-sky-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- ผู้จัดทำคนที่ 1 -->
+                <div class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl flex flex-col sm:flex-row items-center gap-6 group hover:scale-[1.02] transition-transform duration-300">
+                    <div class="w-36 h-44 rounded-2xl overflow-hidden bg-slate-900 shrink-0 border-2 border-sky-300/60 shadow-lg relative">
+                        <img src="author-1.jpg" alt="นายพลพล เพ็ชรากูล" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="text-center sm:text-left space-y-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold border border-sky-300">
+                            <i data-lucide="user" class="w-3.5 h-3.5 text-sky-600"></i>
+                            <span>ผู้จัดทำหลัก</span>
+                        </span>
+                        <h3 class="text-2xl font-bold text-slate-900">นายพลพล เพ็ชรากูล</h3>
+                        <p class="text-sm font-semibold text-sky-700 font-mono">รหัสนิสิต: 66040169</p>
+                        <p class="text-xs text-slate-500 leading-relaxed pt-1">นิสิตชั้นปีที่ 4 คณะศึกษาศาสตร์ มหาวิทยาลัยบูรพา วิทยาเขตบางแสน</p>
+                    </div>
+                </div>
+
+                <!-- ผู้จัดทำคนที่ 2 -->
+                <div class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl flex flex-col sm:flex-row items-center gap-6 group hover:scale-[1.02] transition-transform duration-300">
+                    <div class="w-36 h-44 rounded-2xl overflow-hidden bg-slate-100 shrink-0 border-2 border-emerald-300/60 shadow-lg relative">
+                        <img src="author-2.png" alt="นายวิธวินท์ สังข์มงคล" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="text-center sm:text-left space-y-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold border border-emerald-300">
+                            <i data-lucide="user" class="w-3.5 h-3.5 text-emerald-600"></i>
+                            <span>ผู้จัดทำหลัก</span>
+                        </span>
+                        <h3 class="text-2xl font-bold text-slate-900">นายวิธวินท์ สังข์มงคล</h3>
+                        <p class="text-sm font-semibold text-emerald-700 font-mono">รหัสนิสิต: 66040179</p>
+                        <p class="text-xs text-slate-500 leading-relaxed pt-1">นิสิตชั้นปีที่ 4 คณะศึกษาศาสตร์ มหาวิทยาลัยบูรพา วิทยาเขตบางแสน</p>
+                    </div>
                 </div>
             </div>
         </div>
