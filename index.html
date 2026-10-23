@@ -540,41 +540,77 @@
         </div>
     </section>
 
-    <!-- SECTION 5: งานวิจัยที่เกี่ยวข้อง -->
+    <!-- SECTION 5: งานวิจัยที่เกี่ยวข้อง (อัปเดตงานวิจัยใหม่ 7 ฉบับ) -->
     <section id="related-research" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-12">
             <h2 class="text-xs uppercase font-bold tracking-widest text-emerald-600 mb-2">Literature Review</h2>
             <p class="text-3xl sm:text-4xl font-bold text-slate-900">งานวิจัยและทฤษฎีที่เกี่ยวข้อง</p>
+            <div class="w-16 h-1 bg-gradient-to-r from-emerald-500 to-sky-500 mx-auto mt-4 rounded-full"></div>
         </div>
 
         <div class="liquid-glass-light rounded-3xl p-6 sm:p-8 border border-white shadow-xl overflow-x-auto">
             <table class="w-full text-left text-sm">
                 <thead>
-                    <tr class="border-b border-slate-200 text-sky-800 font-bold bg-sky-50/50">
-                        <th class="py-3.5 px-4 rounded-l-xl">ผู้วิจัย & ปีที่พิมพ์</th>
-                        <th class="py-3.5 px-4">เทคโนโลยี/ฮาร์ดแวร์</th>
-                        <th class="py-3.5 px-4">ระเบียบวิธีวิจัย & โมเดล</th>
-                        <th class="py-3.5 px-4 rounded-r-xl">ข้อสรุปและประโยชน์</th>
+                    <tr class="border-b-2 border-slate-300 text-sky-900 font-bold bg-sky-100/60">
+                        <th class="py-4 px-4 rounded-l-xl w-1/4">ผู้วิจัย & ปีที่พิมพ์</th>
+                        <th class="py-4 px-4 w-1/4">เทคโนโลยี / โมเดลที่ใช้</th>
+                        <th class="py-4 px-4 rounded-r-xl w-2/4">สาระสำคัญและผลการทดลอง</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-200/80 text-slate-700">
-                    <tr class="hover:bg-sky-50/30 transition-colors">
-                        <td class="py-4 px-4 font-bold text-slate-900">Badura et al. (2018)<br><span class="text-xs font-normal text-slate-500">Liu et al. (2020)</span></td>
-                        <td class="py-4 px-4">เซนเซอร์ฝุ่น PMS5003 / SDS011</td>
-                        <td class="py-4 px-4">การตรวจวัดระดับ Hyper-local Data</td>
-                        <td class="py-4 px-4">ระบุว่าเซนเซอร์วัดฝุ่นต้นทุนต่ำสามารถกระจายตัวเพื่อวัดมลพิษระดับจุลภาคได้ครอบคลุมกว่าสถานีรัฐ</td>
+                    <!-- หัวข้อหมวดที่ 1 -->
+                    <tr class="bg-sky-50/80 font-bold text-sky-800">
+                        <td colspan="3" class="py-3 px-4 text-xs uppercase tracking-wider">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-sky-200 text-sky-900">
+                                <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                                <span>1. กลุ่มงานวิจัยระบบตรวจวัดมลพิษด้วย IoT</span>
+                            </span>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-sky-50/30 transition-colors">
-                        <td class="py-4 px-4 font-bold text-slate-900">Kumar et al. (2021)<br><span class="text-xs font-normal text-slate-500">Zawieska et al. (2022)</span></td>
-                        <td class="py-4 px-4">ESP32 + PMS5003 + BME280</td>
-                        <td class="py-4 px-4">Humidity Compensation & K-Factor</td>
-                        <td class="py-4 px-4">ชดเชยค่าความชื้นสัมพัทธ์ลดความคลาดเคลื่อนจากไอน้ำ ทำให้ความเที่ยงตรงเทียบเท่าเครื่องมืออ้างอิง</td>
+                    <tr class="hover:bg-sky-50/40 transition-colors">
+                        <td class="py-4 px-4 font-bold text-slate-900">Ramadan et al. (2024)</td>
+                        <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-lg bg-sky-100 text-sky-800 text-xs font-semibold">IoT + AI (Weighted Class)</span></td>
+                        <td class="py-4 px-4">ใช้ IoT ร่วมกับ AI ตรวจวัดมลพิษอุตสาหกรรม และใช้เทคนิค Weighted Class แก้ปัญหา Data Imbalance เพิ่มความแม่นยำในการเตือนภัยสภาวะวิกฤต</td>
                     </tr>
-                    <tr class="hover:bg-sky-50/30 transition-colors">
-                        <td class="py-4 px-4 font-bold text-slate-900">Castelli et al. (2021)<br><span class="text-xs font-normal text-slate-500">Siwek et al. (2023)</span></td>
-                        <td class="py-4 px-4">Open-Meteo API + Cloud AI</td>
-                        <td class="py-4 px-4">LSTM Regressor Model</td>
-                        <td class="py-4 px-4">การใช้ AI คาดการณ์ข้อมูลอนุกรมเวลาล่วงหน้า เพิ่มความแม่นยำในการเตือนภัยมลพิษทางอากาศ</td>
+                    <tr class="hover:bg-sky-50/40 transition-colors">
+                        <td class="py-4 px-4 font-bold text-slate-900">Hura et al. (2024)</td>
+                        <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-semibold">ESP32 + Wi-Fi Cloud</span></td>
+                        <td class="py-4 px-4">สร้างสถานีตรวจวัดคุณภาพอากาศต้นทุนต่ำด้วย ESP32 ยืนยันการส่งข้อมูลผ่าน Wi-Fi เข้าคลาวด์ได้อย่างมีเสถียรภาพและประหยัดพลังงาน</td>
+                    </tr>
+                    <tr class="hover:bg-sky-50/40 transition-colors">
+                        <td class="py-4 px-4 font-bold text-slate-900">Tello et al. (2025)</td>
+                        <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-lg bg-purple-100 text-purple-800 text-xs font-semibold">Citizen Science + Open Data</span></td>
+                        <td class="py-4 px-4">พัฒนาระบบเฝ้าระวังมลพิษเมืองบนแนวคิด Citizen Science บูรณาการ Open Data และ AI คาดการณ์ฝุ่น เพื่อเสริมการตัดสินใจของชุมชน</td>
+                    </tr>
+
+                    <!-- หัวข้อหมวดที่ 2 -->
+                    <tr class="bg-emerald-50/80 font-bold text-emerald-800">
+                        <td colspan="3" class="py-3 px-4 text-xs uppercase tracking-wider">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-200 text-emerald-900">
+                                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                                <span>2. กลุ่มงานวิจัยการคาดการณ์ฝุ่นด้วย AI / LSTM</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-emerald-50/40 transition-colors">
+                        <td class="py-4 px-4 font-bold text-slate-900">Saminathan & Malathy (2024)</td>
+                        <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-lg bg-indigo-100 text-indigo-800 text-xs font-semibold">Bidirectional LSTM (Bi-LSTM)</span></td>
+                        <td class="py-4 px-4">ประมาณค่าฝุ่น PM 2.5 ด้วย Bidirectional LSTM (Bi-LSTM) พบว่าลดค่าความผิดพลาด RMSE ได้ต่ำกว่า LSTM แบบทิศทางเดียวอย่างมีนัยสำคัญ</td>
+                    </tr>
+                    <tr class="hover:bg-emerald-50/40 transition-colors">
+                        <td class="py-4 px-4 font-bold text-slate-900">Naz et al. (2025)</td>
+                        <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-lg bg-rose-100 text-rose-800 text-xs font-semibold">AirVCQnet (Hybrid Quantum-LSTM)</span></td>
+                        <td class="py-4 px-4">พัฒนาโมเดลไฮบริด AirVCQnet (VMD + CNN + Quantum-LSTM) ทำนายฝุ่นได้แม่นยำสูงกว่าโมเดลแบบคลาสสิกถึง 14%</td>
+                    </tr>
+                    <tr class="hover:bg-emerald-50/40 transition-colors">
+                        <td class="py-4 px-4 font-bold text-slate-900">Wu et al. (2023)</td>
+                        <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-lg bg-amber-100 text-amber-800 text-xs font-semibold">Multivariate LSTM</span></td>
+                        <td class="py-4 px-4">ป้อนข้อมูลอนุกรมเวลาหลายแปรผัน (PM 2.5 ร่วมกับ อุณหภูมิ ความชื้น ลม) เข้าโมเดล LSTM ช่วยลดความผิดพลาดในการทำนายฝุ่นได้อย่างมาก</td>
+                    </tr>
+                    <tr class="hover:bg-emerald-50/40 transition-colors">
+                        <td class="py-4 px-4 font-bold text-slate-900">Zhang et al. (2024)</td>
+                        <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-lg bg-teal-100 text-teal-800 text-xs font-semibold">LSTM & Humidity Compensation</span></td>
+                        <td class="py-4 px-4">สำรวจเชิงระบบพบว่า LSTM เหมาะสมที่สุดสำหรับอนุกรมเวลาฝุ่น พร้อมระบุว่าการชดเชยความชื้นสัมพัทธ์ (Humidity Compensation) เป็นขั้นตอนสำคัญที่สุดต่อความแม่นยำ</td>
                     </tr>
                 </tbody>
             </table>
@@ -842,7 +878,7 @@
                 <!-- อาจารย์ที่ปรึกษาคนที่ 1 -->
                 <div class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl flex flex-col sm:flex-row items-center gap-6 group hover:scale-[1.02] transition-transform duration-300">
                     <div class="w-36 h-44 rounded-2xl overflow-hidden bg-slate-100 shrink-0 border-2 border-sky-300/60 shadow-lg relative">
-                        <img src="advisor-1.png" alt="ผู้ช่วยศาสตราจารย์ ดร.นคร ละลอกน้ำ" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <img src="advisor-1.jpg" alt="ผู้ช่วยศาสตราจารย์ ดร.นคร ละลอกน้ำ" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent"></div>
                     </div>
                     <div class="text-center sm:text-left space-y-2">
@@ -858,7 +894,7 @@
                 <!-- อาจารย์ที่ปรึกษาคนที่ 2 -->
                 <div class="liquid-glass-light rounded-3xl p-8 border border-white shadow-xl flex flex-col sm:flex-row items-center gap-6 group hover:scale-[1.02] transition-transform duration-300">
                     <div class="w-36 h-44 rounded-2xl overflow-hidden bg-slate-100 shrink-0 border-2 border-emerald-300/60 shadow-lg relative">
-                        <img src="advisor-2.png" alt="ผู้ช่วยศาสตราจารย์ ดร.ปริญญา เรืองทิพย์" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                        <img src="advisor-2.jpg" alt="ผู้ช่วยศาสตราจารย์ ดร.ปริญญา เรืองทิพย์" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent"></div>
                     </div>
                     <div class="text-center sm:text-left space-y-2">
