@@ -168,7 +168,6 @@
                     </div>
                 </div>
 
-                <!-- เมนูใหม่: วิธีการดำเนินงาน -->
                 <a href="#methodology" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">วิธีการดำเนินงาน</a>
                 <a href="#project-report" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">เล่มประกอบโครงการ</a>
                 <a href="#related-research" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors rounded-lg hover:bg-sky-100/50">งานวิจัยที่เกี่ยวข้อง</a>
@@ -431,7 +430,7 @@
         </div>
     </section>
 
-    <!-- SECTION 3: วิธีการดำเนินงาน (เมนูใหม่) -->
+    <!-- SECTION 3: วิธีการดำเนินงาน -->
     <section id="methodology" class="relative z-10 py-20 px-6 sm:px-12 lg:px-16 max-w-7xl mx-auto space-y-12">
         <div class="text-center max-w-3xl mx-auto">
             <h2 class="text-xs uppercase font-bold tracking-widest text-sky-600 mb-2">Methodology</h2>
@@ -593,7 +592,7 @@
             <p class="text-3xl sm:text-4xl font-bold text-slate-900">ผลการศึกษา แบบจำลอง 3D และชิ้นงานจริง</p>
         </div>
 
-        <!-- การ์ดสรุปผลการศึกษาทางสถิติ (อัปเดตข้อมูลจาก PDF) -->
+        <!-- การ์ดสรุปผลการศึกษาทางสถิติ -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="liquid-glass-light rounded-3xl p-6 border border-white shadow-xl">
                 <div class="flex items-center gap-3 mb-3">
@@ -668,7 +667,7 @@
             </div>
         </div>
 
-        <!-- HARDWARE GALLERY (ไฟล์ .jfif) -->
+        <!-- HARDWARE GALLERY -->
         <div id="hardware-gallery" class="liquid-glass-light rounded-3xl p-6 sm:p-8 border border-white shadow-xl">
             <div class="mb-6">
                 <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
@@ -679,7 +678,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- รูปที่ 1: โครงสร้างวงจรภายใน -->
                 <div class="bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md transition-all group">
                     <div class="aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-100 mb-3 border border-slate-100">
                         <img src="hardware-inside.jfif" alt="การเดินสายวงจรและอุปกรณ์ภายในกล่อง IoT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -691,7 +689,6 @@
                     <p class="text-xs text-slate-500 leading-relaxed">การติดตั้งไมโครคอนโทรลเลอร์ ESP32, เซนเซอร์ PMS5003, BME280 และจอ OLED เข้ากับบอร์ดขยายสัญญาณ</p>
                 </div>
 
-                <!-- รูปที่ 2: ด้านบนกล่องพร้อมหน้าจอ -->
                 <div class="bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md transition-all group">
                     <div class="aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-100 mb-3 border border-slate-100">
                         <img src="hardware-top.jfif" alt="ฝากล่องพร้อมจอแสดงผล OLED" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -703,7 +700,6 @@
                     <p class="text-xs text-slate-500 leading-relaxed">ส่วนฝากล่องด้านบนเจาะช่องติดตั้งจอ OLED สำหรับแสดงค่าฝุ่น PM 2.5 และสถานะการเชื่อมต่อ ณ จุดติดตั้ง</p>
                 </div>
 
-                <!-- รูปที่ 3: ด้านข้างกล่องเคส -->
                 <div class="bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md transition-all group">
                     <div class="aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-100 mb-3 border border-slate-100">
                         <img src="hardware-side.jfif" alt="เคสกันน้ำและช่องระบายอากาศเซนเซอร์" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -736,21 +732,102 @@
             </div>
         </div>
 
-        <!-- DASHBOARD -->
-        <div id="dashboard" class="liquid-glass-light rounded-3xl p-6 sm:p-8 border border-white shadow-xl">
-            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+        <!-- DASHBOARD (เน้นฝุ่น: Metric Cards บนสุด + ปุ่มสลับเลือกกราฟฝุ่น) -->
+        <div id="dashboard" class="liquid-glass-light rounded-3xl p-6 sm:p-8 border border-white shadow-xl space-y-8">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-200/80 pb-6">
                 <div>
                     <h3 class="text-2xl font-bold text-slate-900">แดชบอร์ดจำลองสตรีมข้อมูลเรียลไทม์ (Streamlit Dashboard)</h3>
-                    <p class="text-xs text-slate-500 font-medium">เปรียบเทียบค่าฝุ่นจริงจาก PMS5003 vs ค่าคาดการณ์จาก AI (LSTM Model 3-7 วัน)</p>
+                    <p class="text-xs text-slate-500 font-medium mt-1">เปรียบเทียบค่าฝุ่นจริงจาก PMS5003 vs ค่าคาดการณ์จาก AI (LSTM Model 3-7 วัน)</p>
                 </div>
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs font-bold">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs font-bold shrink-0">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
                     <span>Live Connected: ESP32 Node 01</span>
                 </div>
             </div>
 
-            <div class="w-full h-[350px] bg-white rounded-2xl p-4 border border-slate-200 shadow-inner">
-                <canvas id="dustChart"></canvas>
+            <!-- 1. Metric Cards แสดงค่าฝุ่นปัจจุบัน (KPI Status) พร้อมแถบสีเตือนระดับคุณภาพอากาศ -->
+            <div>
+                <h4 class="text-xs font-bold text-sky-800 uppercase tracking-widest mb-3 flex items-center gap-1.5">
+                    <i data-lucide="gauge" class="w-4 h-4 text-sky-600"></i>
+                    <span>ค่าฝุ่นปัจจุบัน (Current Dust Levels - PMS5003 Sensor)</span>
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- PM 1.0 -->
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden">
+                        <div class="absolute top-0 left-0 right-0 h-1.5 bg-emerald-500"></div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-slate-500 uppercase">PM 1.0</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[11px] font-bold">ดีมาก</span>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-extrabold text-slate-900">12.1</span>
+                            <span class="text-xs text-slate-500">µg/m³</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-1.5 rounded-full mt-3 overflow-hidden">
+                            <div class="bg-emerald-500 h-full rounded-full" style="width: 24%"></div>
+                        </div>
+                    </div>
+
+                    <!-- PM 2.5 -->
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden ring-2 ring-sky-500/30">
+                        <div class="absolute top-0 left-0 right-0 h-1.5 bg-emerald-500"></div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-sky-600 uppercase">PM 2.5 (หลัก)</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[11px] font-bold">ดีมาก</span>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-extrabold text-sky-700">18.4</span>
+                            <span class="text-xs text-slate-500">µg/m³</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-1.5 rounded-full mt-3 overflow-hidden">
+                            <div class="bg-emerald-500 h-full rounded-full" style="width: 36%"></div>
+                        </div>
+                    </div>
+
+                    <!-- PM 10 -->
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm relative overflow-hidden">
+                        <div class="absolute top-0 left-0 right-0 h-1.5 bg-emerald-500"></div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-slate-500 uppercase">PM 10</span>
+                            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[11px] font-bold">ดี</span>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-extrabold text-slate-900">32.8</span>
+                            <span class="text-xs text-slate-500">µg/m³</span>
+                        </div>
+                        <div class="w-full bg-slate-100 h-1.5 rounded-full mt-3 overflow-hidden">
+                            <div class="bg-emerald-500 h-full rounded-full" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. ระบบสลับตัวเลือกข้อมูลฝุ่น (Tabs Filter Options) -->
+            <div>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+                    <h4 class="text-xs font-bold text-slate-700 uppercase tracking-widest flex items-center gap-1.5">
+                        <i data-lucide="line-chart" class="w-4 h-4 text-sky-600"></i>
+                        <span>แนวโน้มและค่าคาดการณ์ (Graph Trends)</span>
+                    </h4>
+
+                    <!-- Filter Tabs -->
+                    <div class="inline-flex p-1 bg-slate-200/80 rounded-xl border border-slate-300/60 text-xs font-bold">
+                        <button id="tab-pm25" onclick="switchDustType('pm25')" class="px-4 py-1.5 rounded-lg bg-sky-600 text-white shadow-sm transition-all">
+                            PM 2.5
+                        </button>
+                        <button id="tab-pm10" onclick="switchDustType('pm10')" class="px-4 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition-all">
+                            PM 10
+                        </button>
+                        <button id="tab-pm1" onclick="switchDustType('pm1')" class="px-4 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition-all">
+                            PM 1.0
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Interactive Chart Canvas -->
+                <div class="w-full h-[360px] bg-white rounded-2xl p-4 border border-slate-200 shadow-inner">
+                    <canvas id="dustChart"></canvas>
+                </div>
             </div>
         </div>
     </section>
@@ -764,6 +841,61 @@
     <!-- JAVASCRIPT -->
     <script>
         lucide.createIcons();
+
+        // ชุดข้อมูลฝุ่นย้อนหลังและค่าพยากรณ์ AI สำหรับสลับดูกราฟ
+        const dustDatasets = {
+            pm25: {
+                labelReal: 'ค่าฝุ่นจริง PM 2.5 (PMS5003 Sensor)',
+                labelAi: 'ค่าพยากรณ์ AI PM 2.5 (LSTM Model)',
+                colorReal: '#0284C7',
+                colorAi: '#10B981',
+                realData: [14.2, 15.8, 18.4, 21.1, 19.5, 17.2, 18.4, null, null],
+                aiData: [null, null, null, null, null, null, 18.4, 21.0, 23.5]
+            },
+            pm10: {
+                labelReal: 'ค่าฝุ่นจริง PM 10 (PMS5003 Sensor)',
+                labelAi: 'ค่าพยากรณ์ AI PM 10 (LSTM Model)',
+                colorReal: '#D97706',
+                colorAi: '#059669',
+                realData: [24.5, 27.1, 31.0, 36.2, 33.8, 29.4, 32.8, null, null],
+                aiData: [null, null, null, null, null, null, 32.8, 35.2, 38.0]
+            },
+            pm1: {
+                labelReal: 'ค่าฝุ่นจริง PM 1.0 (PMS5003 Sensor)',
+                labelAi: 'ค่าพยากรณ์ AI PM 1.0 (LSTM Model)',
+                colorReal: '#6366F1',
+                colorAi: '#10B981',
+                realData: [9.1, 10.4, 12.1, 14.0, 13.2, 11.0, 12.1, null, null],
+                aiData: [null, null, null, null, null, null, 12.1, 13.8, 15.2]
+            }
+        };
+
+        let myDustChart = null;
+
+        function switchDustType(type) {
+            // อัปเดตสไตล์ของปุ่ม Tabs
+            ['pm25', 'pm10', 'pm1'].forEach(t => {
+                const btn = document.getElementById(`tab-${t}`);
+                if (t === type) {
+                    btn.className = "px-4 py-1.5 rounded-lg bg-sky-600 text-white shadow-sm transition-all";
+                } else {
+                    btn.className = "px-4 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 transition-all";
+                }
+            });
+
+            const data = dustDatasets[type];
+            if (myDustChart) {
+                myDustChart.data.datasets[0].label = data.labelReal;
+                myDustChart.data.datasets[0].borderColor = data.colorReal;
+                myDustChart.data.datasets[0].data = data.realData;
+
+                myDustChart.data.datasets[1].label = data.labelAi;
+                myDustChart.data.datasets[1].borderColor = data.colorAi;
+                myDustChart.data.datasets[1].data = data.aiData;
+
+                myDustChart.update();
+            }
+        }
 
         document.addEventListener("DOMContentLoaded", () => {
             const heading = document.getElementById("animated-heading");
@@ -795,29 +927,30 @@
                 });
             }, 100);
 
+            // สร้างกราฟเริ่มต้น (PM 2.5)
             const ctx = document.getElementById('dustChart').getContext('2d');
-            new Chart(ctx, {
+            myDustChart = new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00 (พยากรณ์)', '16:00 (พยากรณ์)'],
                     datasets: [
                         {
-                            label: 'ค่าฝุ่นจริง PM 2.5 (PMS5003 Sensor)',
-                            data: [14.2, 15.8, 18.4, 21.1, 19.5, 17.2, 18.4, null, null],
-                            borderColor: '#0284C7',
-                            backgroundColor: 'rgba(2, 132, 199, 0.1)',
+                            label: dustDatasets.pm25.labelReal,
+                            data: dustDatasets.pm25.realData,
+                            borderColor: dustDatasets.pm25.colorReal,
+                            backgroundColor: 'rgba(2, 132, 199, 0.08)',
                             fill: true,
-                            tension: 0.3,
+                            tension: 0.35,
                             pointRadius: 5
                         },
                         {
-                            label: 'ค่าพยากรณ์ AI (LSTM Model 3-7 วัน)',
-                            data: [null, null, null, null, null, null, 18.4, 21.0, 23.5],
-                            borderColor: '#10B981',
+                            label: dustDatasets.pm25.labelAi,
+                            data: dustDatasets.pm25.aiData,
+                            borderColor: dustDatasets.pm25.colorAi,
                             borderDash: [6, 6],
-                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            backgroundColor: 'rgba(16, 185, 129, 0.08)',
                             fill: false,
-                            tension: 0.3,
+                            tension: 0.35,
                             pointRadius: 5
                         }
                     ]
